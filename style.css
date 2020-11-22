@@ -1,1 +1,77 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
 
+body {
+  color: rebeccapurple;
+  background-color: rgba(35, 200, 90, 0.808);
+}
+
+.title {
+  width: 500px;
+  color: aquamarine;
+  margin: 3% auto;
+}
+
+.container {
+  width: 580px;
+  margin: 0 auto;
+  background-color: rgb(36, 228, 138);
+  padding: 3%;
+  padding-left: 6%;
+  border-radius: 10px;
+}
+.title-two {
+  font-size: 100;
+  text-align: left;
+  margin: 2% 0;
+}
+
+.form {
+  padding: 5px;
+}
+
+.form-line {
+  display: inline-flex;
+  padding: 5px 0px;
+}
+
+.right {
+  float: right;
+  margin-right: 100px;
+}
+
+.left {
+  float: left;
+}
+
+input,
+select {
+  width: 160px;
+  margin-left: 10px;
+  cursor: text;
+}
+
+/* Table styling  */
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: cyan;
+  line-height: 30px;
+}
+
+button {
+  width: 200px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 20px;
+  background-color: rgb(76, 190, 146);
+  border-radius: 5px;
+  margin: 14px 25%;
+  cursor: pointer;
+}
