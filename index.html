@@ -3,62 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker App</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Expense Tracker App</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-
         <h1 class="title">Expense Tracker App</h1>
+    <header>
 
-
-    </header>
-
-    <section class="container">
-
-        <h3 class="title-two">Add a new item: </h3>
-
+    <section class="content">
+        <h3 class="secondTitle">Add a new item: </h3>
         <div class="form">
-
-            <form id="spending-form">
-
-                <div class="form-line left">
+            <form id="expForm">
+                <div class="formLine left">
                     <span for="type">Type:</span>
-
-                    <select id="typeOfExpense">
+                    <select id="type">
                         <option value="chooseOne">Choose one...</option>
-                        <option value="card">Card</option>
-                        <option value="cash">Cash</option>
-                        <option value="cryptocoin">Cryptocoin</option>
-                        <option value="other">Other</option>
+                        <option value="Card">Card</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Cryptocoin">Cryptocoin</option>
+                        <option value="Other">Other</option>
                     </select>
-                 </div>
+                </div>
+                <div class="formLine right">
+                    <span for="name">Name:</span>
+                    <input type="text" id="name">
+                </div>
 
-                 <div class="form-line right">
-                     <span for="name" >Name:</span>
-                     <input type="text" id="name">
-                 </div>
-
-                 <div class="form-line left">
+                <div class="formLine left">
                     <span for="date">Date:</span>
                     <input type="date" id="date">
                 </div>
-
-                <div class="form-line right">
-                    <span for="amount" >Amount:</span>
-                    <input type="number" id="amount">
+                <div class="formLine right">
+                    <span for="amount">Amount:</span>
+                    <input type="text" id="amount">
                 </div>
-
-                <button type="submit" class="button-save">Add a new expense</button>
-
+                <button type="submit" class="buttonSave">Add a new expense</button>
             </form>
         </div>
- </section>
-    
-    <section class="container" >
-
+    </section>
+    <section class="content">
         <table class="table">
             <thead>
                 <tr>
@@ -70,21 +57,10 @@
                 </tr>
             </thead>
             <tbody id="expenseTable">
-                <tr>
 
-                    <td colspan="5">No expense items yet! Please add one up top...</td>
-
-
-                </tr>
             </tbody>
         </table>
-
-
-
-            
     </section>
-
     <script src="/app.js"></script>
-    
 </body>
 </html>
